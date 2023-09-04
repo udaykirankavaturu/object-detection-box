@@ -1,6 +1,7 @@
 runtime: python39
+service: object-detection
 entrypoint: gunicorn -b :$PORT main:app
 
 handlers:
 - url: /.*
-  script: auto
+  script: main
