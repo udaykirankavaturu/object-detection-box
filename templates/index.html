@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object Detection App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Object Detection App</h1>
+        <br />
+        <br />
+        <form action="/detect_object" method="GET">
+            <button type="submit">Start Camera</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
